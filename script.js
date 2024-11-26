@@ -1,13 +1,24 @@
 function checkPassword() {
-  const password = document.getElementById("password").value;
-  const secretContent = document.getElementById("secret-content");
-  const loginSection = document.getElementById("login-section");
+  // Define the correct password
+  const correctPassword = "q9&)k@kd17";
 
-  // q9&)k@kd17 IS PASSWORD DO NOT FORGET
-  if (password === "q9&)k@kd17") {
-    loginSection.style.display = "none";
-    secretContent.classList.remove("hidden");
+  // Get the entered password
+  const enteredPassword = document.getElementById("password").value;
+
+  // Check if the entered password matches the correct password
+  if (enteredPassword === correctPassword) {
+    // Hide the welcome text and access instructions
+    document.getElementById("welcome-text").style.display = "none";
+    document.getElementById("access-text").style.display = "none";
+
+    // Hide the login section (input field and submit button)
+    document.getElementById("login-section").style.display = "none";
+
+    // Show the secret content
+    document.getElementById("secret-content").classList.remove("hidden");
   } else {
     alert("Incorrect password. Please try again.");
   }
 }
+
+// q9&)k@kd17 IS PASSWORD DO NOT FORGET
