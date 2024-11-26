@@ -35,9 +35,10 @@ h1, p {
 
 #login-section {
   display: flex; /* Use Flexbox to align the input and button */
-  justify-content: center; /* Center them horizontally */
+  justify-content: flex-start; /* Align items to the left side */
   align-items: center; /* Vertically align the elements */
   margin-top: 10px; /* Adjust space between elements */
+  width: 100%; /* Take full width of the container */
 }
 
 #login-section input {
@@ -58,10 +59,7 @@ h1, p {
   border-radius: 25px; /* Round button corners */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-#login-section button:hover {
-  background-color: #f0f0f0; /* Light gray on hover */
+  width: auto; /* Let the button take up just enough width */
 }
 
 /* Hide the secret content initially */
