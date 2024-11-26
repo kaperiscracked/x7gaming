@@ -13,7 +13,7 @@ body {
 
 .container {
   text-align: center; /* Center text inside container */
-  padding: 20px;
+  padding: 20px 10px; /* Reduce padding to remove excess space */
   border-radius: 8px;
   background-color: #333; /* Dark background for container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
@@ -24,6 +24,7 @@ body {
 h1, p {
   font-size: 24px;
   margin: 10px 0;
+  padding: 0; /* Remove padding around the text */
 }
 
 #login-section {
