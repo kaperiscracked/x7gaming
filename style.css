@@ -9,11 +9,18 @@ body {
   align-items: center; /* Center content vertically */
   height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+* {
+  margin: 0; /* Remove all default margins */
+  padding: 0; /* Remove all default paddings */
+  box-sizing: border-box; /* Ensure padding and borders do not affect layout */
 }
 
 .container {
   text-align: center; /* Center text inside container */
-  padding: 20px 10px; /* Reduce padding to remove excess space */
+  padding: 20px; /* Apply padding to the container */
   border-radius: 8px;
   background-color: #333; /* Dark background for container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
@@ -23,19 +30,18 @@ body {
 
 h1, p {
   font-size: 24px;
-  margin: 10px 0;
-  padding: 0; /* Remove padding around the text */
+  margin-bottom: 10px; /* Add bottom margin for separation between elements */
 }
 
 #login-section {
-  margin-top: 20px;
   display: flex; /* Use Flexbox to align the input and button */
   justify-content: center; /* Center them horizontally */
   align-items: center; /* Vertically align the elements */
+  margin-top: 10px; /* Adjust space between elements */
 }
 
 #login-section input {
-  padding: 8px 12px; /* Shorter height for the input */
+  padding: 5px 10px; /* Shorter height for the input */
   font-size: 16px;
   margin-right: 10px; /* Add space between input and button */
   width: 70%; /* Make the input take up 70% of the width of the container */
@@ -44,7 +50,7 @@ h1, p {
 }
 
 #login-section button {
-  padding: 8px 20px; /* Button padding to match input's height */
+  padding: 5px 20px; /* Button padding to match input's height */
   font-size: 16px;
   background-color: white; /* White button */
   color: #333; /* Dark text color for contrast */
