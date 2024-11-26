@@ -1,22 +1,29 @@
-
-.hidden {
-  display: none;
-}
-
-
+/* Apply the Consolas font to the body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Consolas, "Courier New", monospace;
   background-color: #121212;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
 }
 
 h1, p {
   font-size: 24px;
+  margin: 10px 0;
 }
 
 #login-section {
@@ -27,17 +34,35 @@ h1, p {
   padding: 10px;
   font-size: 16px;
   margin-right: 10px;
+  width: calc(100% - 120px);
 }
 
 #login-section button {
-  padding: 10px;
+  padding: 12px 30px;
   font-size: 16px;
-  background-color: #00bcd4;
-  color: white;
+  background-color: white;
+  color: #333;
   border: none;
+  border-radius: 50px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #login-section button:hover {
-  background-color: #008c9e;
+  background-color: #f0f0f0;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#secret-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#secret-content ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
